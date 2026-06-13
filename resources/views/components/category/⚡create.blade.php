@@ -12,6 +12,11 @@ new class extends Component
     {
         $this->form->store();
         Flux::modal('create-category')->close();
+
+        // session
+        session()->flash('success', 'Category created successfully');
+
+        $this->redirectRoute('category.index',navigate: true);
     }
 
     public function resetForm()
