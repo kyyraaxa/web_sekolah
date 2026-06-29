@@ -16,8 +16,12 @@
                         {{ __('Dashboard') }}
                     </flux:sidebar.item>
 
-                    <flux:sidebar.item icon="home" :href="route('category.index')" :current="request()->routeIs('category.index')" wire:navigate>
+                    <flux:sidebar.item icon="folder" :href="route('category.index')" :current="request()->routeIs('category.index')" wire:navigate>
                         {{ __('Categories') }}
+                    </flux:sidebar.item>
+
+                    <flux:sidebar.item icon="user" :href="route('student.index')" :current="request()->routeIs('student.index')" wire:navigate>
+                        {{ __('Students') }}
                     </flux:sidebar.item>
                 </flux:sidebar.group>
             </flux:sidebar.nav>
