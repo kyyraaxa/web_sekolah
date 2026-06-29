@@ -39,6 +39,9 @@ class StudentForm extends Form
 
     public function store()
     {
+        // 1. Ubah email menjadi huruf kecil sebelum divalidasi dan disimpan
+        $this->email = strtolower($this->email);
+        
         $this->validate();
         Student::create($this->only(['name', 'class', 'email']));
         $this->reset();
@@ -55,6 +58,9 @@ class StudentForm extends Form
     // update
     public function update()
     {
+        // 2. Ubah juga di sini agar saat edit/update, email tetap tersimpan huruf kecil
+        $this->email = strtolower($this->email);
+
         $this->validate();
         $this->student->update($this->only(['name', 'class', 'email']));
     }

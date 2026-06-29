@@ -65,6 +65,8 @@ new class extends Component
                             {{ $student->email }}
                         </flux:table.cell>
 
+                        <flux:table.cell class="whitespace-nowrap">{{ $student->created_at->diffForHumans() }}</flux:table.cell>
+
                         <flux:table.cell>
 
 
