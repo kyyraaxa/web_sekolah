@@ -42,6 +42,7 @@ new class extends Component
                 <flux:table.column>Name</flux:table.column>
                 <flux:table.column>Subject</flux:table.column>
                 <flux:table.column>Email</flux:table.column>
+                <flux:table.column>Created At</flux:table.column>
                 <flux:table.column>Action</flux:table.column>
             </flux:table.columns>
 
