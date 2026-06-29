@@ -11,6 +11,8 @@ Route::middleware(['auth', 'verified'])->group(function () {
         ->name('category.index');
     Route::livewire('/students', 'pages::student.index')
         ->name('student.index');
+    Route::livewire('/teachers', 'pages::teacher.index')
+        ->name('teacher.index');
 });
 
 require __DIR__.'/settings.php';

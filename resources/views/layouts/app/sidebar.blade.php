@@ -23,6 +23,10 @@
                     <flux:sidebar.item icon="user" :href="route('student.index')" :current="request()->routeIs('student.index')" wire:navigate>
                         {{ __('Students') }}
                     </flux:sidebar.item>
+
+                    <flux:sidebar.item icon="user" :href="route('teacher.index')" :current="request()->routeIs('teacher.index')" wire:navigate>
+                        {{ __('Teachers') }}
+                    </flux:sidebar.item>
                 </flux:sidebar.group>
             </flux:sidebar.nav>
 
