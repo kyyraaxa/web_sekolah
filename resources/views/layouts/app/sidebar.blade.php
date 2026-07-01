@@ -29,6 +29,10 @@
                     <flux:sidebar.item icon="calendar" :href="route('attendance.index')" :current="request()->routeIs('attendance.index')" wire:navigate>
                         {{ __('Attendances') }}
                     </flux:sidebar.item>
+
+                    <flux:sidebar.item icon="academic-cap" :href="route('grade.index')" :current="request()->routeIs('grade.index')" wire:navigate>
+                        {{ __('Grades') }}
+                    </flux:sidebar.item>
                 </flux:sidebar.group>
             </flux:sidebar.nav>
 
