@@ -16,16 +16,18 @@
                         {{ __('Dashboard') }}
                     </flux:sidebar.item>
 
-                    <flux:sidebar.item icon="folder" :href="route('category.index')" :current="request()->routeIs('category.index')" wire:navigate>
-                        {{ __('Categories') }}
-                    </flux:sidebar.item>
+                    
 
                     <flux:sidebar.item icon="user" :href="route('student.index')" :current="request()->routeIs('student.index')" wire:navigate>
                         {{ __('Students') }}
                     </flux:sidebar.item>
 
-                    <flux:sidebar.item icon="user" :href="route('teacher.index')" :current="request()->routeIs('teacher.index')" wire:navigate>
+                    <flux:sidebar.item icon="user-group" :href="route('teacher.index')" :current="request()->routeIs('teacher.index')" wire:navigate>
                         {{ __('Teachers') }}
+                    </flux:sidebar.item>
+
+                    <flux:sidebar.item icon="calendar" :href="route('attendance.index')" :current="request()->routeIs('attendance.index')" wire:navigate>
+                        {{ __('Attendances') }}
                     </flux:sidebar.item>
                 </flux:sidebar.group>
             </flux:sidebar.nav>
