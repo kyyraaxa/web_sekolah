@@ -39,7 +39,7 @@ new class extends Component
     }
 
     public function deleteStudent() {
-        $this->form->student->delete();
+        $this->form->destroy();
         Flux::modal('delete-student')->close();
         session()->flash('success', 'Student deleted successfully');
         $this->redirectRoute('student.index', navigate: true);

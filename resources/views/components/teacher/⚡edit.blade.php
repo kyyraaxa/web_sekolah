@@ -38,7 +38,7 @@ new class extends Component
     }
 
     public function deleteTeacher() {
-        $this->form->teacher->delete();
+        $this->form->destroy();
         Flux::modal('delete-teacher')->close();
         session()->flash('success', 'Teacher deleted successfully');
         $this->redirectRoute('teacher.index', navigate: true);

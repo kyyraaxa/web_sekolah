@@ -48,7 +48,7 @@ new class extends Component
 
             <flux:table.rows>
                 @foreach ($this->students as $student)
-                    <flux:table.row :key="$student->id">
+                    <flux:table.row :key="$student->student_id">
 
                         <flux:table.cell>
                             {{ $loop->iteration + ($this->students->firstItem() - 1) }}
@@ -75,12 +75,12 @@ new class extends Component
                                 <flux:button variant="ghost" size="sm" icon="ellipsis-horizontal" inset="top bottom"></flux:button>
 
                                 <flux:menu>
-                                    <flux:menu.item icon="pencil" wire:click="edit({{ $student->id }})">Edit</flux:menu.item>
+                                    <flux:menu.item icon="pencil" wire:click="edit({{ $student->student_id }})">Edit</flux:menu.item>
 
                                     <flux:menu.separator />
 
-                                    {{-- <flux:menu.item variant="danger" icon="trash" wire:click="$dispatch('confirm-delete', id: $student->id)">Delete</flux:menu.item> --}}
-                                    <flux:menu.item variant="danger" icon="trash" wire:click="$dispatch('confirm-delete', { id: {{ $student->id }} })">Delete</flux:menu.item>
+                                    {{-- <flux:menu.item variant="danger" icon="trash" wire:click="$dispatch('confirm-delete', id: $student->student_id)">Delete</flux:menu.item> --}}
+                                    <flux:menu.item variant="danger" icon="trash" wire:click="$dispatch('confirm-delete', { id: {{ $student->student_id }} })">Delete</flux:menu.item>
                                 </flux:menu>
                             </flux:dropdown>
                         </flux:table.cell>

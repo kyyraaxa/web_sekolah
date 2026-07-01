@@ -9,10 +9,11 @@ use Illuminate\Validation\Rule;
 
 class TeacherForm extends Form
 {
+    public ?int $teacher_id = null;
+
     public string $name = '';
     public string $subject = '';
     public string $email = '';
-    public ?Teacher $teacher = null;
 
     public function rules(): array
     {
@@ -22,7 +23,7 @@ class TeacherForm extends Form
                 'string',
                 'min:3',
                 'max:255',
-                Rule::unique('teachers', 'name')->ignore($this->teacher?->id),
+                Rule::unique('teachers', 'name')->ignore($this->teacher_id, 'teacher_id'),
             ],
             'subject' => [
                 'required',
@@ -32,7 +33,7 @@ class TeacherForm extends Form
             'email' => [
                 'required',
                 'email',
-                Rule::unique('teachers', 'email')->ignore($this->teacher?->id),
+                Rule::unique('teachers', 'email')->ignore($this->teacher_id, 'teacher_id'),
             ],
         ];
     }
@@ -49,19 +50,28 @@ class TeacherForm extends Form
 
     public function setTeacher(Teacher $teacher): void
     {
-        $this->teacher = $teacher;
+        $this->teacher_id = $teacher->teacher_id;
         $this->name = $teacher->name;
         $this->subject = $teacher->subject;
         $this->email = $teacher->email;
     }
 
-    // update
     public function update()
     {
         // 2. Ubah juga di sini agar saat edit/update, email tetap tersimpan huruf kecil
         $this->email = strtolower($this->email);
-        
+
         $this->validate();
-        $this->teacher->update($this->only(['name', 'subject', 'email']));
+
+        $teacher = Teacher::findOrFail($this->teacher_id);
+        $teacher->update($this->only(['name', 'subject', 'email']));
+    }
+
+    public function destroy()
+    {
+        if ($this->teacher_id) {
+            Teacher::findOrFail($this->teacher_id)->delete();
+            $this->reset(); // Bersihkan isi form setelah dihapus
+        }
     }
 }
