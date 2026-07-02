@@ -16,7 +16,7 @@ $recentAnnouncements = Announcement::latest()->take(4)->get();
         {{-- Row 1: Header Sambutan --}}
         <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 bg-white dark:bg-zinc-900 p-6 border border-zinc-200 dark:border-zinc-800 rounded-2xl shadow-sm">
             <div>
-                <flux:heading size="xl" class="text-zinc-900 dark:text-white font-black">Selamat Datang di SIAKAD</flux:heading>
+                <flux:heading size="xl" class="text-zinc-900 dark:text-white font-black">Selamat Datang di SSMS</flux:heading>
                 <flux:subheading size="sm" class="text-zinc-500 dark:text-zinc-400 mt-1">Berikut adalah ringkasan perkembangan data operasional sekolah hari ini.</flux:subheading>
             </div>
             <div class="flex items-center gap-2 text-xs font-semibold bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300 px-3 py-1.5 rounded-lg w-fit">
