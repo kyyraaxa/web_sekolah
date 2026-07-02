@@ -33,6 +33,10 @@
                     <flux:sidebar.item icon="academic-cap" :href="route('grade.index')" :current="request()->routeIs('grade.index')" wire:navigate>
                         {{ __('Grades') }}
                     </flux:sidebar.item>
+
+                    <flux:sidebar.item icon="currency-dollar" :href="route('payment.index')" :current="request()->routeIs('payment.index')" wire:navigate>
+                        {{ __('Payments') }}
+                    </flux:sidebar.item>
                 </flux:sidebar.group>
             </flux:sidebar.nav>
 
