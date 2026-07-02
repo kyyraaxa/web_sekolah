@@ -37,6 +37,10 @@
                     <flux:sidebar.item icon="currency-dollar" :href="route('payment.index')" :current="request()->routeIs('payment.index')" wire:navigate>
                         {{ __('Payments') }}
                     </flux:sidebar.item>
+
+                    <flux:sidebar.item icon="megaphone" :href="route('announcement.index')" :current="request()->routeIs('announcement.index')" wire:navigate>
+                        {{ __('Announcements') }}
+                    </flux:sidebar.item>
                 </flux:sidebar.group>
             </flux:sidebar.nav>
 

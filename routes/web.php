@@ -19,6 +19,8 @@ Route::middleware(['auth', 'verified'])->group(function () {
         ->name('grade.index');
     Route::livewire('/payments', 'pages::payment.index')
         ->name('payment.index');
+    Route::livewire('/announcements', 'pages::announcement.index')
+        ->name('announcement.index');
 });
 
 require __DIR__.'/settings.php';
