@@ -83,7 +83,7 @@ new class extends Component
        <flux:table :paginate="$this->attendances">
             <flux:table.columns>
                 <flux:table.column>No</flux:table.column>
-                <flux:table.column>Student ID</flux:table.column>
+                <flux:table.column>Student Name</flux:table.column>
                 <flux:table.column>Status</flux:table.column>
                 <flux:table.column>Attendance Date</flux:table.column>
                 <flux:table.column>Created At</flux:table.column>
