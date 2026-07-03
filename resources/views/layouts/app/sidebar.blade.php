@@ -26,6 +26,10 @@
                         {{ __('Schedules') }}
                     </flux:sidebar.item>
 
+                    <flux:sidebar.item icon="pencil-square" :href="route('assignment.index')" :current="request()->routeIs('assignment.index')" wire:navigate>
+                        {{ __('Assignments') }}
+                    </flux:sidebar.item>
+
                     <flux:sidebar.item icon="user-group" :href="route('teacher.index')" :current="request()->routeIs('teacher.index')" wire:navigate>
                         {{ __('Teachers') }}
                     </flux:sidebar.item>

@@ -13,6 +13,8 @@ Route::middleware(['auth', 'verified'])->group(function () {
         ->name('student.index');
     Route::livewire('/schedules', 'pages::schedule.index')
         ->name('schedule.index');
+    Route::livewire('/assignments', 'pages::assignment.index')
+        ->name('assignment.index');
     Route::livewire('/teachers', 'pages::teacher.index')
         ->name('teacher.index');
     Route::livewire('/attendances', 'pages::attendance.index')
