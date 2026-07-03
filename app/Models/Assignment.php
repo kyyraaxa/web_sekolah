@@ -22,4 +22,16 @@ class Assignment extends Model
     protected $casts = [
         'due_date' => 'datetime',
     ];
+
+    // Relasi ke banyak pengumpulan (untuk Admin melihat siapa saja yang kumpul)
+    public function submissions()
+    {
+        return $this->hasMany(Submission::class, 'assignment_id');
+    }
+
+    // Mendapatkan submission milik siswa yang sedang login saat ini
+    public function userSubmission()
+    {
+        return $this->hasOne(Submission::class, 'assignment_id')->where('user_id', auth()->id());
+    }
 }
