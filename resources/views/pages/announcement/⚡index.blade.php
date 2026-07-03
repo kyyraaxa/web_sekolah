@@ -27,7 +27,9 @@ new class extends Component
     <flux:separator variant="subtle" />
     
     <flux:modal.trigger name="create-announcement">
+        @if(auth()->user()->role === 'admin' || auth()->user()->role === 'teacher')
         <flux:button variant="primary" icon="plus" color="primary">Add Announcement</flux:button>
+        @endif
     </flux:modal.trigger>
 
     <livewire:announcement.create />

@@ -12,15 +12,16 @@
 
             <flux:sidebar.nav>
                 <flux:sidebar.group :heading="__('Platform')" class="grid">
+                    
                     <flux:sidebar.item icon="home" :href="route('dashboard')" :current="request()->routeIs('dashboard')" wire:navigate>
                         {{ __('Dashboard') }}
                     </flux:sidebar.item>
 
-                    
-
-                    <flux:sidebar.item icon="user" :href="route('student.index')" :current="request()->routeIs('student.index')" wire:navigate>
-                        {{ __('Students') }}
-                    </flux:sidebar.item>
+                    @if(auth()->user()->role === 'admin')
+                        <flux:sidebar.item icon="user" :href="route('student.index')" :current="request()->routeIs('student.index')" wire:navigate>
+                            {{ __('Students') }}
+                        </flux:sidebar.item>
+                    @endif
 
                     <flux:sidebar.item icon="calendar-days" :href="route('schedule.index')" :current="request()->routeIs('schedule.index')" wire:navigate>
                         {{ __('Schedules') }}
@@ -30,25 +31,32 @@
                         {{ __('Assignments') }}
                     </flux:sidebar.item>
 
-                    <flux:sidebar.item icon="user-group" :href="route('teacher.index')" :current="request()->routeIs('teacher.index')" wire:navigate>
-                        {{ __('Teachers') }}
-                    </flux:sidebar.item>
+                    @if(auth()->user()->role === 'admin')
+                        <flux:sidebar.item icon="user-group" :href="route('teacher.index')" :current="request()->routeIs('teacher.index')" wire:navigate>
+                            {{ __('Teachers') }}
+                        </flux:sidebar.item>
+                    @endif
 
-                    <flux:sidebar.item icon="calendar" :href="route('attendance.index')" :current="request()->routeIs('attendance.index')" wire:navigate>
-                        {{ __('Attendances') }}
-                    </flux:sidebar.item>
+                    @if(auth()->user()->role === 'admin' || auth()->user()->role === 'teacher')
+                        <flux:sidebar.item icon="calendar" :href="route('attendance.index')" :current="request()->routeIs('attendance.index')" wire:navigate>
+                            {{ __('Attendances') }}
+                        </flux:sidebar.item>
 
-                    <flux:sidebar.item icon="academic-cap" :href="route('grade.index')" :current="request()->routeIs('grade.index')" wire:navigate>
-                        {{ __('Grades') }}
-                    </flux:sidebar.item>
+                        <flux:sidebar.item icon="academic-cap" :href="route('grade.index')" :current="request()->routeIs('grade.index')" wire:navigate>
+                            {{ __('Grades') }}
+                        </flux:sidebar.item>
+                    @endif
 
-                    <flux:sidebar.item icon="currency-dollar" :href="route('payment.index')" :current="request()->routeIs('payment.index')" wire:navigate>
-                        {{ __('Payments') }}
-                    </flux:sidebar.item>
+                    @if(auth()->user()->role === 'admin')
+                        <flux:sidebar.item icon="currency-dollar" :href="route('payment.index')" :current="request()->routeIs('payment.index')" wire:navigate>
+                            {{ __('Payments') }}
+                        </flux:sidebar.item>
+                    @endif
 
                     <flux:sidebar.item icon="megaphone" :href="route('announcement.index')" :current="request()->routeIs('announcement.index')" wire:navigate>
                         {{ __('Announcements') }}
                     </flux:sidebar.item>
+
                 </flux:sidebar.group>
             </flux:sidebar.nav>
 
@@ -67,7 +75,6 @@
             <x-desktop-user-menu class="hidden lg:block" :name="auth()->user()->name" />
         </flux:sidebar>
 
-        <!-- Mobile User Menu -->
         <flux:header class="lg:hidden">
             <flux:sidebar.toggle class="lg:hidden" icon="bars-2" inset="left" />
 

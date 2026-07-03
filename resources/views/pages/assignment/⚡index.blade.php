@@ -23,11 +23,19 @@ new class extends Component
 
 <div class="max-w-7xl mx-auto space-y-4">
     <flux:heading size="xl" class="text-zinc-800 dark:text-white">Assignments</flux:heading>
-    <flux:subheading size="lg" class="text-zinc-600 dark:text-zinc-400">Manage classroom tasks and deadlines</flux:subheading>
+        @if(auth()->user()->role === 'admin' || auth()->user()->role === 'teacher')
+            <flux:subheading size="lg" class="text-zinc-600 dark:text-zinc-400">Manage classroom tasks and deadlines</flux:subheading>
+        @endif
+        @if(auth()->user()->role === 'student')
+            <flux:subheading size="lg" class="text-zinc-600 dark:text-zinc-400">View your classroom tasks and deadlines</flux:subheading>
+        @endif
     <flux:separator variant="subtle" />
     
+    {{-- Trigger Modal Tambah Assignment --}}
     <flux:modal.trigger name="create-assignment">
-        <flux:button variant="primary" icon="plus" color="primary">Add Assignment</flux:button>
+        @if(auth()->user()->role === 'admin' || auth()->user()->role === 'teacher')
+            <flux:button variant="primary" icon="plus">Add Assignment</flux:button>
+        @endif
     </flux:modal.trigger>
 
     {{-- Komponen Form Modals --}}
