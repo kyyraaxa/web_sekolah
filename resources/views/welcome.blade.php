@@ -5,8 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SMARTSCHOOL MANAGEMENT SYSTEM</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+
+    {{-- Script Deteksi Mode Otomatis Sistem Laptop & Inisialisasi Mermaid --}}
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <script>
+        // 1. Cek Preferensi Mode Sistem Laptop/Browser
+        const isDark = localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches);
+        
+        if (isDark) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+
+        // 2. Setup Tema Diagram Mermaid agar Sinkron
+        document.addEventListener("DOMContentLoaded", function() {
+            mermaid.initialize({ 
+                startOnLoad: true, 
+                theme: isDark ? 'dark' : 'neutral',
+                themeVariables: {
+                    background: isDark ? '#18181b' : '#ffffff',
+                    primaryColor: isDark ? '#27272a' : '#f4f4f5',
+                    lineColor: isDark ? '#52525b' : '#d4d4d8'
+                }
+            });
+        });
+    </script>
 </head>
-<body class="bg-zinc-50 text-zinc-900 antialiased dark:bg-zinc-950 dark:text-zinc-100">
+<body class="bg-zinc-50 text-zinc-900 antialiased dark:bg-zinc-950 dark:text-zinc-100 min-h-screen flex flex-col justify-between transition-colors duration-200">
+    
     {{-- Navbar --}}
     <nav class="border-b border-zinc-200 bg-white/80 backdrop-blur-md dark:border-zinc-800 dark:bg-zinc-900/80 sticky top-0 z-50">
         <div class="mx-auto max-w-7xl px-6 py-4 flex justify-between items-center">
@@ -32,7 +59,7 @@
     </nav>
 
     {{-- Hero Section --}}
-    <main class="mx-auto max-w-7xl px-6 py-16 md:py-24 grid md:grid-cols-2 gap-12 items-center">
+    <main class="mx-auto max-w-7xl px-6 py-16 md:py-24 grid md:grid-cols-2 gap-12 items-center w-full flex-1">
         <div class="space-y-6">
             <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-blue-50 text-blue-600 dark:bg-blue-950/50 dark:text-blue-400 border border-blue-200/50 dark:border-blue-800/30">
                 <span class="w-2 h-2 rounded-full bg-blue-600 animate-pulse"></span> Sistem Terintegrasi V2.0
@@ -44,9 +71,9 @@
                 Akses rekap kehadiran siswa, jadwal pelajaran, manajemen nilai, dan pengumuman sekolah terpusat dalam satu platform digital yang responsif.
             </p>
             
-            {{-- Grid Login Panah Kekanan --}}
+            {{-- Tombol Utama Absensi --}}
             <div class="pt-2 pb-6 mb-4">
-                <a href="{{ route('login') }}" class="inline-flex items-center gap-2.5 px-5 py-2.5 text-sm font-semibold rounded-xl transition shadow-sm bg-zinc-900 text-gray hover:bg-zinc-800 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-200">
+                <a href="{{ route('login') }}" class="inline-flex items-center gap-2.5 px-5 py-2.5 text-sm font-semibold rounded-xl transition shadow-sm bg-zinc-900 text-white hover:bg-zinc-800 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-200">
                     <span>Mulai Absensi Sekarang</span>
                     <svg class="w-4 h-4 text-zinc-400 dark:text-zinc-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -63,7 +90,7 @@
                 </div>
                 <div>
                     <h3 class="font-bold text-zinc-800 dark:text-white">Portal Siswa</h3>
-                    <p class="text-xs text-zinc-500 mt-1">Cek kehadiran mandiri, rekap nilai, dan tugas kelas.</p>
+                    <p class="text-xs text-zinc-500 mt-1 dark:text-zinc-400">Cek kehadiran mandiri, rekap nilai, dan tugas kelas.</p>
                 </div>
             </div>
 
@@ -73,7 +100,7 @@
                 </div>
                 <div>
                     <h3 class="font-bold text-zinc-800 dark:text-white">Ruang Guru</h3>
-                    <p class="text-xs text-zinc-500 mt-1">Kelola absensi harian, input nilai, dan materi ajar.</p>
+                    <p class="text-xs text-zinc-500 mt-1 dark:text-zinc-400">Kelola absensi harian, input nilai, dan materi ajar.</p>
                 </div>
             </div>
 
@@ -85,12 +112,13 @@
                         </div>
                         <div>
                             <h3 class="font-bold text-zinc-800 dark:text-white">Orang Tua / Wali</h3>
-                            <p class="text-xs text-zinc-500 mt-0.5">Pantau absensi real-time dan perkembangan studi anak.</p>
+                            <p class="text-xs text-zinc-500 mt-0.5 dark:text-zinc-400">Pantau absensi real-time dan perkembangan studi anak.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
+
 </body>
 </html>
