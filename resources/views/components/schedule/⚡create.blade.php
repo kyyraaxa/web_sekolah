@@ -53,6 +53,7 @@ new class extends Component
                     <option value="Rabu">Rabu</option>
                     <option value="Kamis">Kamis</option>
                     <option value="Jumat">Jumat</option>
+                    <option value="Sabtu">Sabtu</option>
                 </flux:select>
 
                 <flux:input
