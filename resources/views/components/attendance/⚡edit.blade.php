@@ -4,6 +4,7 @@ use Livewire\Component;
 use Livewire\Attributes\On;
 use App\Models\Attendance;
 use App\Livewire\Forms\AttendanceForm;
+use App\Models\Student;
 
 new class extends Component
 {
@@ -21,6 +22,12 @@ new class extends Component
         Flux::modal('edit-attendance')->close();
         session()->flash('success', 'Attendance updated successfully');
         $this->redirectRoute('attendance.index', navigate: true);
+    }
+
+    // ambil semua data student
+    #[computed]
+    public function getStudents(){
+        return Student::all();
     }
 
     public function resetForm()
@@ -70,12 +77,11 @@ new class extends Component
             {{-- form field --}}
             <div class="space-y-6">
                 {{-- Student ID --}}
-                <flux:input
-                    label="Student ID"
-                    type="number"
-                    placeholder="e.g., 101"
-                    wire:model="form.student_id"
-                />
+                <flux:select label="Student" wire:model="form.student_id" placeholder="Choose student...">
+                    @foreach ($this->getStudents() as $student)
+                        <flux:select.option value="{{ $student->student_id }}">{{ $student->name }}</flux:select.option>
+                    @endforeach
+                </flux:select>
 
                 {{-- Status Kehadiran --}}
                 <flux:select label="Status" placeholder="Select status..." wire:model="form.status">

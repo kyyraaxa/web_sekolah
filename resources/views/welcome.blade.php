@@ -74,7 +74,7 @@
             {{-- Tombol Utama Absensi --}}
             <div class="pt-2 pb-6 mb-4">
                 <a href="{{ route('login') }}" class="inline-flex items-center gap-2.5 px-5 py-2.5 text-sm font-semibold rounded-xl transition shadow-sm bg-zinc-900 text-white hover:bg-zinc-800 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-200">
-                    <span>Mulai Absensi Sekarang</span>
+                    <span>Mulai Sekarang</span>
                     <svg class="w-4 h-4 text-zinc-400 dark:text-zinc-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                     </svg>
