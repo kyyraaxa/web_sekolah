@@ -5,6 +5,25 @@ use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'welcome')->name('home');
 
+Route::get('/visi-misi', function () {
+    return view('visi-misi');
+})->name('visi-misi');
+
+Route::get('/profil', function () {
+    return view('profil');
+})->name('profil');
+
+Route::get('/postingan', function () {
+    return view('postingan');
+})->name('postingan');
+
+Route::get('/postingan/{id}', function ($id) {
+    // Sementara kita arahkan ke satu view detail, nanti data sesungguhnya bisa diambil dari database.
+    return view('baca', ['id' => $id]);
+})->name('postingan.baca');
+
+
+
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::view('dashboard', 'dashboard')->name('dashboard');
     Route::livewire('/categories', 'pages::category.index')
