@@ -4,6 +4,7 @@ use Livewire\Component;
 use Livewire\Attributes\On;
 use App\Models\Grade;
 use App\Livewire\Forms\GradeForm;
+use App\Models\Student;
 
 new class extends Component
 {
@@ -21,6 +22,12 @@ new class extends Component
         Flux::modal('edit-grade')->close();
         session()->flash('success', 'Grade updated successfully');
         $this->redirectRoute('grade.index', navigate: true);
+    }
+
+    // ambil semua data student
+    #[computed]
+    public function getStudents(){
+        return Student::all();
     }
 
     public function resetForm()
@@ -66,12 +73,12 @@ new class extends Component
 
             {{-- form field --}}
             <div class="space-y-6">
-                <flux:input
-                    label="Student ID"
-                    type="number"
-                    placeholder="e.g., 1"
-                    wire:model="form.student_id"
-                />
+                {{-- Input Student ID --}}
+                <flux:select label="Student" wire:model="form.student_id" placeholder="Choose student...">
+                    @foreach ($this->getStudents() as $student)
+                        <flux:select.option value="{{ $student->student_id }}">{{ $student->name }}</flux:select.option>
+                    @endforeach
+                </flux:select>
 
                 <flux:input
                     label="Subject"

@@ -51,6 +51,7 @@ new class extends Component
 
             {{-- form field --}}
             <div class="space-y-6">
+                {{-- Input Student ID --}}
                 <flux:select label="Student" wire:model="form.student_id" placeholder="Choose student...">
                     @foreach ($this->getStudents as $student)
                         <flux:select.option value="{{ $student->student_id }}">{{ $student->name }}</flux:select.option>

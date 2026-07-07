@@ -57,13 +57,12 @@ new class extends Component
                             {{ $loop->iteration + ($this->payments->firstItem() - 1) }}
                         </flux:table.cell>
 
-                        {{-- Nama Siswa & ID Relasi --}}
-                        <flux:table.cell class="flex items-center gap-3 font-medium text-zinc-800 dark:text-white">
+                        {{-- Menampilkan Nama Siswa --}}
+                        <flux:table.cell class="font-medium text-zinc-800 dark:text-white">
                             @if($payment->student)
                                 {{ $payment->student->name }}
-                                <span class="text-xs text-zinc-400 font-normal">(#{{ $payment->student_id }})</span>
                             @else
-                                <span class="text-red-500 italic text-xs">Siswa Tidak Ditemukan</span>
+                                <span class="text-red-500 italic">Siswa Tidak Ditemukan</span>
                             @endif
                         </flux:table.cell>
 

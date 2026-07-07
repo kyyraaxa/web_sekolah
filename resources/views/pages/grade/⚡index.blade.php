@@ -59,13 +59,12 @@ new class extends Component
                             {{ $loop->iteration + ($this->grades->firstItem() - 1) }}
                         </flux:table.cell>
 
-                        {{-- Kolom Hubungan Nama Siswa & ID --}}
+                        {{-- Menampilkan Nama Siswa --}}
                         <flux:table.cell class="font-medium text-zinc-800 dark:text-white">
                             @if($grade->student)
-                                {{ $grade->student->name }} 
-                                <span class="text-xs text-zinc-400 font-normal">(#{{ $grade->student_id }})</span>
+                                {{ $grade->student->name }}
                             @else
-                                <span class="text-red-500 italic text-xs">Siswa Tidak Ditemukan (#{{ $grade->student_id }})</span>
+                                <span class="text-red-500 italic">Siswa Tidak Ditemukan</span>
                             @endif
                         </flux:table.cell>
 
