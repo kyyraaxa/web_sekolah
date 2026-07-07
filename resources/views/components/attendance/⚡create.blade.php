@@ -21,7 +21,7 @@ new class extends Component
         $this->redirectRoute('attendance.index', navigate: true);
     }
 
-     // ambil semua data student
+    // ambil semua data student
     #[computed]
     public function getStudents(){
         return Student::all();
