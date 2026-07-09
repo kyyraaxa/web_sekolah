@@ -27,17 +27,13 @@
 </head>
 <body class="liquid-bg text-zinc-900 antialiased min-h-screen flex flex-col justify-between selection:bg-emerald-600 selection:text-white relative">
 
-    <!-- Ornamen Cairan Abstrak Tambahan di Latar Belakang -->
-    <div class="absolute top-[-10%] left-[-10%] w-[50vw] h-[50vw] bg-emerald-400/30 rounded-full blur-[120px] pointer-events-none animate-pulse"></div>
-    <div class="absolute bottom-[-10%] right-[-10%] w-[40vw] h-[40vw] bg-amber-300/30 rounded-full blur-[100px] pointer-events-none"></div>
-
     {{-- 1. Navbar Kaca Kristal --}}
     <header class="w-full sticky top-0 z-50 px-4 md:px-6 py-3">
         <nav class="mx-auto max-w-7xl bg-white/20 dark:bg-zinc-900/20 backdrop-blur-xl border border-white/30 dark:border-white/10 rounded-2xl px-6 py-3 flex justify-between items-center shadow-lg shadow-emerald-950/10">
             {{-- Kiri: Logo & Nama Sekolah --}}
             <a href="/" class="flex items-center gap-3 group">
                 <div class="p-1.5 bg-white/40 backdrop-blur-md border border-white/40 rounded-xl transition group-hover:scale-105 shadow-sm">
-                    <img src="{{ asset('img/logonw.png') }}" alt="Logo MTs. NW" class="w-9 h-9 object-contain">
+                    <img src="{{ asset('img/logo0.png') }}" alt="Logo MTs. NW" class="w-9 h-9 object-contain">
                 </div>
                 <div>
                     <span class="font-heading font-extrabold text-sm md:text-base tracking-tight block text-white drop-shadow-sm leading-tight">MTs. NW Karang Juli</span>
@@ -104,7 +100,7 @@
                     <!-- Kiri: Logo Transparan & Identitas -->
                     <div class="flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left">
                         <div class="p-2 bg-white/10 rounded-2xl border border-white/20 backdrop-blur-md shadow-inner">
-                            <img src="{{ asset('img/logonw.png') }}" alt="Logo Madrasah" class="w-16 h-16 md:w-20 md:h-20 object-contain transform transition duration-500 group-hover:rotate-3">
+                            <img src="{{ asset('img/logo0.png') }}" alt="Logo Madrasah" class="w-16 h-16 md:w-20 md:h-20 object-contain transform transition duration-500 group-hover:rotate-3">
                         </div>
                         <div>
                             <h2 class="font-heading text-xl font-bold text-white tracking-tight leading-snug drop-shadow-sm">

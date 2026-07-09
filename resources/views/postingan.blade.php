@@ -31,7 +31,7 @@
             {{-- Kiri: Logo & Nama Madrasah --}}
             <a href="/" class="flex items-center gap-3">
                 <div class="p-1.5 bg-white/40 backdrop-blur-md border border-white/40 rounded-xl">
-                    <img src="{{ asset('img/logonw.png') }}" alt="Logo" class="w-9 h-9 object-contain">
+                    <img src="{{ asset('img/logo0.png') }}" alt="Logo" class="w-9 h-9 object-contain">
                 </div>
                 <div>
                     <span class="font-heading font-extrabold text-sm md:text-base text-white block">MTs. NW Karang Juli</span>

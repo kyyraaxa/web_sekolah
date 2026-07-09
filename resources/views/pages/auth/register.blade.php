@@ -34,7 +34,7 @@
         <div class="max-w-7xl mx-auto flex justify-between items-center">
             <a href="/" class="flex items-center gap-3">
                 <div class="p-1.5 bg-white/30 backdrop-blur-md border border-white/30 rounded-xl shadow-sm">
-                    <img src="{{ asset('img/logonw.png') }}" alt="Logo MTs. NW" class="w-8 h-8 object-contain">
+                    <img src="{{ asset('img/logo0.png') }}" alt="Logo MTs. NW" class="w-8 h-8 object-contain">
                 </div>
                 <span class="font-heading font-extrabold text-sm text-white hidden sm:block tracking-tight">MTs. NW Karang Juli</span>
             </a>
@@ -51,12 +51,12 @@
             {{-- Header Kotak + Logo Sekolah --}}
             <div class="text-center space-y-2">
                 <div class="w-20 h-20 bg-white/30 backdrop-blur-md border border-white/40 rounded-2xl flex items-center justify-center mx-auto shadow-lg p-2.5 group">
-                    <img src="{{ asset('img/logonw.png') }}" 
+                    <img src="{{ asset('img/logo0.png') }}" 
                          alt="Logo MTs. NW Karang Juli" 
                          class="w-full h-full object-contain transition duration-500 group-hover:rotate-6">
                 </div>
-                <h2 class="font-heading text-2xl font-black text-white tracking-tight drop-shadow-sm">Create an account</h2>
-                <p class="text-emerald-100/70 text-xs font-medium">Enter your details below to create your account</p>
+                <h2 class="font-heading text-2xl font-black text-white tracking-tight drop-shadow-sm">Buat akun</h2>
+                <p class="text-emerald-100/70 text-xs font-medium">Masukkan detail Anda di bawah ini untuk membuat akun</p>
             </div>
 
             @if (session('status'))
@@ -69,9 +69,9 @@
             <form method="POST" action="{{ route('register.store') }}" class="space-y-4">
                 @csrf
                 
-                {{-- Input Name --}}
+                {{-- Input Nama --}}
                 <div class="space-y-1.5">
-                    <label for="name" class="text-xs font-bold text-white tracking-wide uppercase opacity-90">Name</label>
+                    <label for="name" class="text-xs font-bold text-white tracking-wide uppercase opacity-90">Nama</label>
                     <div class="relative">
                         <span class="absolute inset-y-0 left-0 flex items-center pl-3.5 text-sm"></span>
                         <input type="text" id="name" name="name" value="{{ old('name') }}" required autofocus autocomplete="name"
@@ -83,9 +83,9 @@
                     @enderror
                 </div>
 
-                {{-- Input Email Address --}}
+                {{-- Input Alamat Email --}}
                 <div class="space-y-1.5">
-                    <label for="email" class="text-xs font-bold text-white tracking-wide uppercase opacity-90">Email address</label>
+                    <label for="email" class="text-xs font-bold text-white tracking-wide uppercase opacity-90">Alamat Email</label>
                     <div class="relative">
                         <span class="absolute inset-y-0 left-0 flex items-center pl-3.5 text-sm"></span>
                         <input type="email" id="email" name="email" value="{{ old('email') }}" required autocomplete="email"
@@ -97,9 +97,9 @@
                     @enderror
                 </div>
 
-                {{-- Input Password dengan Tombol Mata --}}
+                {{-- Input Kata Sandi dengan Tombol Mata --}}
                 <div class="space-y-1.5">
-                    <label for="password" class="text-xs font-bold text-white tracking-wide uppercase opacity-90">Password</label>
+                    <label for="password" class="text-xs font-bold text-white tracking-wide uppercase opacity-90">Kata Sandi</label>
                     <div class="relative">
                         <span class="absolute inset-y-0 left-0 flex items-center pl-3.5 text-sm"></span>
                         <input type="password" id="password" name="password" required autocomplete="new-password"
@@ -114,9 +114,9 @@
                     @enderror
                 </div>
 
-                {{-- Input Confirm Password dengan Tombol Mata --}}
+                {{-- Input Konfirmasikan Kata Sandi dengan Tombol Mata --}}
                 <div class="space-y-1.5">
-                    <label for="password_confirmation" class="text-xs font-bold text-white tracking-wide uppercase opacity-90">Confirm password</label>
+                    <label for="password_confirmation" class="text-xs font-bold text-white tracking-wide uppercase opacity-90">Konfirmasikan Kata Sandi</label>
                     <div class="relative">
                         <span class="absolute inset-y-0 left-0 flex items-center pl-3.5 text-sm"></span>
                         <input type="password" id="password_confirmation" name="password_confirmation" required autocomplete="new-password"
@@ -134,13 +134,13 @@
                 {{-- Tombol Submit Register --}}
                 <button type="submit" data-test="register-user-button"
                     class="w-full mt-4 bg-gradient-to-r from-amber-400 to-yellow-400 hover:from-amber-300 hover:to-yellow-300 text-emerald-950 font-bold py-3 rounded-xl transition-all duration-300 shadow-lg shadow-amber-950/20 text-sm tracking-wide active:scale-[0.98]">
-                    Create account →
+                    Buat Akun →
                 </button>
             </form>
 
             {{-- Footer Kotak --}}
             <div class="text-center pt-2 border-t border-white/10 text-xs font-medium text-emerald-100/60 space-x-1">
-                <span>Already have an account?</span>
+                <span>Sudah punya akun?</span>
                 <a href="{{ route('login') }}" wire:navigate class="text-amber-300 font-bold hover:underline">Log in</a>
             </div>
 

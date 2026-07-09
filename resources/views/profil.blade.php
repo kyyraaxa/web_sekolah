@@ -36,7 +36,7 @@
             {{-- Kiri: Logo & Nama Madrasah --}}
             <a href="/" class="flex items-center gap-3">
                 <div class="p-1.5 bg-white/40 backdrop-blur-md border border-white/40 rounded-xl">
-                    <img src="{{ asset('img/logonw.png') }}" alt="Logo" class="w-9 h-9 object-contain">
+                    <img src="{{ asset('img/logo0.png') }}" alt="Logo" class="w-9 h-9 object-contain">
                 </div>
                 <div>
                     <span class="font-heading font-extrabold text-sm md:text-base text-white block">MTs. NW Karang Juli</span>
@@ -99,7 +99,7 @@
             <!-- Box Gambar / Lambang Samping Seni Kaca -->
             <div class="bg-gradient-to-tr from-white/10 to-white/5 backdrop-blur-md h-64 md:h-80 rounded-2xl flex flex-col items-center justify-center p-6 text-center border border-white/20 shadow-inner relative overflow-hidden group">
                 <div class="absolute inset-0 bg-gradient-to-b from-transparent to-emerald-950/20"></div>
-                <img src="{{ asset('img/logonw.png') }}" alt="Logo" class="w-24 h-24 object-contain opacity-90 mb-4 transform transition duration-700 group-hover:scale-110">
+                <img src="{{ asset('img/logo0.png') }}" alt="Logo" class="w-24 h-24 object-contain opacity-90 mb-4 transform transition duration-700 group-hover:scale-110">
                 <p class="font-heading font-bold text-white tracking-wide">YPP NW KADINDI</p>
                 <p class="text-[11px] text-emerald-200 mt-1 italic">"Iman, Ilmu, dan Amal Sholeh"</p>
             </div>

@@ -34,7 +34,7 @@
         <div class="max-w-7xl mx-auto flex justify-between items-center">
             <a href="/" class="flex items-center gap-3">
                 <div class="p-1.5 bg-white/30 backdrop-blur-md border border-white/30 rounded-xl shadow-sm">
-                    <img src="{{ asset('img/logonw.png') }}" alt="Logo MTs. NW" class="w-8 h-8 object-contain">
+                    <img src="{{ asset('img/logo0.png') }}" alt="Logo MTs. NW" class="w-8 h-8 object-contain">
                 </div>
                 <span class="font-heading font-extrabold text-sm text-white hidden sm:block tracking-tight">MTs. NW Karang Juli</span>
             </a>
@@ -51,7 +51,7 @@
             {{-- Header Kotak + Logo Sekolah Interaktif --}}
             <div class="text-center space-y-2">
                 <div class="w-20 h-20 bg-white/30 backdrop-blur-md border border-white/40 rounded-2xl flex items-center justify-center mx-auto shadow-lg p-2.5 group">
-                    <img src="{{ asset('img/logonw.png') }}" 
+                    <img src="{{ asset('img/logo0.png') }}" 
                          alt="Logo MTs. NW Karang Juli" 
                          class="w-full h-full object-contain transition duration-500 group-hover:rotate-6">
                 </div>
