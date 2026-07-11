@@ -25,7 +25,7 @@ class ScheduleForm extends Form
             'day' => [
                 'required',
                 'string',
-                Rule::in(['Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu']), // Memastikan hari valid
+                Rule::in(['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']), // Memastikan hari valid
             ],
             'subject' => [
                 'required',
