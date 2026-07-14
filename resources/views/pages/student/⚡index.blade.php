@@ -22,7 +22,7 @@ new class extends Component
 
 <div class="max-w-7xl mx-auto space-y-4">
     <flux:heading size="xl" style="font-weight: bold;" class="text-zinc-800 dark:text-white">Students</flux:heading>
-    <flux:subheading size="lg" style="font-weight: 600;" class="text-zinc-600 dark:text-zinc-400">Manage your students</flux:subheading>
+    <flux:subheading size="lg" class="text-zinc-600 dark:text-zinc-400">Manage your students</flux:subheading>
     <flux:separator variant="subtle" />
     
     <flux:modal.trigger name="create-student">

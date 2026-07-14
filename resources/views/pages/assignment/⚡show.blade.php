@@ -114,7 +114,7 @@ new class extends Component
     {{-- ========================================================================= --}}
     @if(auth()->user()->role === 'admin' || auth()->user()->role === 'teacher')
         <div class="space-y-4">
-            <flux:heading size="lg">Daftar Pengumpulan Tugas Siswa</flux:heading>
+            <flux:heading size="lg" style="font-weight: bold;">Daftar Pengumpulan Tugas Siswa</flux:heading>
             
             @php 
                 $submissions = $assignment->submissions()->with('user')->get();
@@ -180,7 +180,7 @@ new class extends Component
     {{-- ========================================================================= --}}
     @if(auth()->user()->role === 'student')
         <div class="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-2xl p-6 space-y-4 shadow-sm">
-            <flux:heading size="lg">Lembar Pengumpulan Kamu</flux:heading>
+            <flux:heading size="lg" style="font-weight: bold;">Lembar Pengumpulan Kamu</flux:heading>
 
             @php
                 $mySub = $assignment->userSubmission;

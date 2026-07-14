@@ -29,7 +29,7 @@ new class extends Component
 ?>
 
 <div class="max-w-7xl mx-auto space-y-4">
-    <flux:heading size="xl" class="text-zinc-800 dark:text-white">Class Schedules</flux:heading>
+    <flux:heading size="xl" style="font-weight: bold;" class="text-zinc-800 dark:text-white">Class Schedules</flux:heading>
         @if(auth()->user()->role === 'admin' || auth()->user()->role === 'teacher')
             <flux:subheading size="lg" class="text-zinc-600 dark:text-zinc-400">Manage school learning schedules</flux:subheading>
         @endif

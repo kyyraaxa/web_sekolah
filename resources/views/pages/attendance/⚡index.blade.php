@@ -39,7 +39,7 @@ new class extends Component
         
         {{-- Sisi Kiri: Judul Halaman --}}
         <div>
-            <flux:heading size="xl" class="text-zinc-800 dark:text-white">Attendance</flux:heading>
+            <flux:heading size="xl" style="font-weight: bold;" class="text-zinc-800 dark:text-white">Attendance</flux:heading>
             <flux:subheading size="lg" class="text-zinc-600 dark:text-zinc-400">Manage student attendance records</flux:subheading>
         </div>
 
