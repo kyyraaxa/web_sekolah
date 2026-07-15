@@ -80,11 +80,11 @@
             <article class="bg-white/10 backdrop-blur-2xl rounded-3xl border border-white/20 shadow-xl overflow-hidden flex flex-col justify-between group transition-all duration-300 hover:scale-[1.02]">
                 <div>
                     <div class="w-full h-48 overflow-hidden bg-emerald-950/20 relative">
-                        <img src="{{ asset('img/berita1.jpg') }}" alt="PPDB" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&w=600&q=80';">
+                        <img src="{{ asset('img/SPMBmts.jpg') }}" alt="PPDB" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&w=600&q=80';">
                         <span class="absolute top-3 left-3 px-2.5 py-1 text-[10px] font-bold bg-amber-400 text-emerald-950 rounded-lg uppercase">Pengumuman</span>
                     </div>
                     <div class="p-6 space-y-3">
-                        <span class="text-xs text-emerald-200/80 font-medium">08 Juli 2026</span>
+                        <span class="text-xs text-emerald-200/80 font-medium">01 Juni 2026</span>
                         <h3 class="font-heading text-base md:text-lg font-bold text-white leading-snug line-clamp-2">PPDB Tahun Ajaran 2026/2027 Telah Resmi Dibuka</h3>
                         <p class="text-xs md:text-sm text-emerald-50/70 line-clamp-3">MTs. NW Karang Juli membuka pendaftaran santri baru secara online dan offline. Mari bergabung menjadi generasi islami berwawasan IPTEK...</p>
                     </div>
@@ -98,13 +98,13 @@
             <article class="bg-white/10 backdrop-blur-2xl rounded-3xl border border-white/20 shadow-xl overflow-hidden flex flex-col justify-between group transition-all duration-300 hover:scale-[1.02]">
                 <div>
                     <div class="w-full h-48 overflow-hidden bg-emerald-950/20 relative">
-                        <img src="{{ asset('img/berita2.jpg') }}" alt="Workshop" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=600&q=80';">
+                        <img src="{{ asset('img/MATAMUDA0.jpg') }}" alt="Workshop" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=600&q=80';">
                         <span class="absolute top-3 left-3 px-2.5 py-1 text-[10px] font-bold bg-blue-400 text-zinc-950 rounded-lg uppercase">Kegiatan</span>
                     </div>
                     <div class="p-6 space-y-3">
-                        <span class="text-xs text-emerald-200/80 font-medium">04 Juli 2026</span>
-                        <h3 class="font-heading text-base md:text-lg font-bold text-white leading-snug line-clamp-2">Workshop Peningkatan Transformasi Pembelajaran Digital</h3>
-                        <p class="text-xs md:text-sm text-emerald-50/70 line-clamp-3">Meningkatkan kompetensi asatidz dalam mengoperasikan media berbasis TIK demi efektivitas kegiatan belajar mengajar...</p>
+                        <span class="text-xs text-emerald-200/80 font-medium">13 Juli 2026</span>
+                        <h3 class="font-heading text-base md:text-lg font-bold text-white leading-snug line-clamp-2">Upacara Bendera & Pembukaan MATAMUDA/MPLS</h3>
+                        <p class="text-xs md:text-sm text-emerald-50/70 line-clamp-3">Dokumentasi upacara bendera & pembukaan MATAMUDA/MPLS yg diselenggarakan oleh seluruh lembaga YPP NW KADINDI...</p>
                     </div>
                 </div>
                 <div class="p-6 pt-0 mt-auto flex justify-end">
@@ -116,13 +116,13 @@
             <article class="bg-white/10 backdrop-blur-2xl rounded-3xl border border-white/20 shadow-xl overflow-hidden flex flex-col justify-between group transition-all duration-300 hover:scale-[1.02]">
                 <div>
                     <div class="w-full h-48 overflow-hidden bg-emerald-950/20 relative">
-                        <img src="{{ asset('img/berita3.jpg') }}" alt="Prestasi" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=600&q=80';">
+                        <img src="{{ asset('img/JUARA2_0.jpg') }}" alt="Prestasi" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=600&q=80';">
                         <span class="absolute top-3 left-3 px-2.5 py-1 text-[10px] font-bold bg-rose-400 text-zinc-950 rounded-lg uppercase">Prestasi</span>
                     </div>
                     <div class="p-6 space-y-3">
-                        <span class="text-xs text-emerald-200/80 font-medium">28 Juni 2026</span>
-                        <h3 class="font-heading text-base md:text-lg font-bold text-white leading-snug line-clamp-2">Santri MTs. NW Karang Juli Juara 1 Tingkat Kabupaten</h3>
-                        <p class="text-xs md:text-sm text-emerald-50/70 line-clamp-3">Prestasi gemilang diraih dalam ajang perlombaan tilawah Al-Qur'an, membawa harum nama pondok pesantren...</p>
+                        <span class="text-xs text-emerald-200/80 font-medium">18 Agustus 2026</span>
+                        <h3 class="font-heading text-base md:text-lg font-bold text-white leading-snug line-clamp-2">Santri MTs. NW Karang Juli Juara 2 Tingkat Kecamatan</h3>
+                        <p class="text-xs md:text-sm text-emerald-50/70 line-clamp-3">Prestasi gemilang diraih dalam ajang perlombaan tari nasional dalam rangka memeriahkan HUT RI ke-80, membawa harum nama pondok pesantren...</p>
                     </div>
                 </div>
                 <div class="p-6 pt-0 mt-auto flex justify-end">

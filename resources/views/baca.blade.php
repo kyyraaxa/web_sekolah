@@ -46,27 +46,26 @@
             @if($id == 1)
                 <div class="flex items-center gap-3 text-xs">
                     <span class="px-2.5 py-1 font-bold bg-amber-400 text-emerald-950 rounded-lg uppercase">Pengumuman</span>
-                    <span class="text-emerald-100/70">08 Juli 2026</span>
+                    <span class="text-emerald-100/70">01 Juni 2026</span>
                 </div>
                 <h1 class="font-heading text-2xl md:text-4xl font-extrabold text-white leading-tight">PPDB Tahun Ajaran 2026/2027 Telah Resmi Dibuka</h1>
                 
                 {{--  SLOT FOTO BERITA 1 --}}
                 <div class="w-full bg-white/5 rounded-2xl border border-white/10 p-2 overflow-hidden shadow-inner">
-                    <img src="{{ asset('img/berita1.jpg') }}" alt="Detail PPDB" class="w-full h-64 md:h-96 object-cover rounded-xl" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&w=1200&q=80';">
+                    <img src="{{ asset('img/SPMBmts.jpg') }}" alt="Detail PPDB" class="w-full h-64 md:h-96 object-cover rounded-xl" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&w=1200&q=80';">
                 </div>
 
                 <div class="text-emerald-50 text-sm md:text-base leading-relaxed space-y-4 font-medium">
                     <p>Pendaftaran resmi santri baru di MTs. NW Karang Juli telah resmi dibuka mulai hari ini. Pihak madrasah memfasilitasi jalur pendaftaran berbasis online guna mempermudah akses bagi calon pendaftar dari luar wilayah.</p>
                     <p>Seluruh berkas persyaratan seperti SKL, Kartu Keluarga, serta Akta kelahiran dapat langsung divalidasi ke bagian sekretariat pendaftaran pada jam kerja operasional madrasah.</p>
                 </div>
-            {{-- Berita 1.1 --}}
+                {{-- Berita 1.1 --}}
                 <div class="flex items-center gap-3 text-xs">
                     <span class="px-2.5 py-1 font-bold bg-amber-400 text-emerald-950 rounded-lg uppercase">Pengumuman</span>
-                    <span class="text-emerald-100/70">08 Juli 2026</span>
+                    <span class="text-emerald-100/70">01 Juni 2026</span>
                 </div>
                 <h1 class="font-heading text-2xl md:text-4xl font-extrabold text-white leading-tight">PPDB Tahun Ajaran 2026/2027 Telah Resmi Dibuka</h1>
                 
-                {{--  SLOT FOTO BERITA 1 --}}
                 <div class="w-full bg-white/5 rounded-2xl border border-white/10 p-2 overflow-hidden shadow-inner">
                     <img src="{{ asset('img/berita1.jpg') }}" alt="Detail PPDB" class="w-full h-64 md:h-96 object-cover rounded-xl" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&w=1200&q=80';">
                 </div>
@@ -80,77 +79,73 @@
             @if($id == 2)
                 <div class="flex items-center gap-3 text-xs">
                     <span class="px-2.5 py-1 font-bold bg-blue-400 text-zinc-950 rounded-lg uppercase">Kegiatan</span>
-                    <span class="text-emerald-100/70">04 Juli 2026</span>
+                    <span class="text-emerald-100/70">13 Juli 2026</span>
                 </div>
-                <h1 class="font-heading text-2xl md:text-4xl font-extrabold text-white leading-tight">Workshop Peningkatan Transformasi Pembelajaran Digital</h1>
+                <h1 class="font-heading text-2xl md:text-4xl font-extrabold text-white leading-tight">Upacara Bendera & Pembukaan MATAMUDA/MPLS</h1>
                 
                 {{-- SLOT FOTO BERITA 2 --}}
                 <div class="w-full bg-white/5 rounded-2xl border border-white/10 p-2 overflow-hidden shadow-inner">
-                    <img src="{{ asset('img/berita2.jpg') }}" alt="Detail Workshop" class="w-full h-64 md:h-96 object-cover rounded-xl" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1200&q=80';">
+                    <img src="{{ asset('img/MATAMUDA0.jpg') }}" alt="Detail Workshop" class="w-full h-64 md:h-96 object-cover rounded-xl" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1200&q=80';">
                 </div>
 
                 <div class="text-emerald-50 text-sm md:text-base leading-relaxed space-y-4 font-medium">
-                    <p>Dalam rangka menyambut digitalisasi sistem akademik, dewan guru MTs. NW Karang Juli mengikuti workshop intensif. Program ini bertujuan melatih kapabilitas pengajaran interaktif menggunakan instrumen berbasis TIK modern.</p>
+                    <p>Dokumentasi upacara bendera & pembukaan MATAMUDA/MPLS yg diselenggarakan oleh seluruh lembaga YPP NW KADINDI.</p>
                 </div>
-            {{-- Berita 2.1 --}}
+                {{-- Berita 2.1 --}}
                 <div class="flex items-center gap-3 text-xs">
                     <span class="px-2.5 py-1 font-bold bg-blue-400 text-zinc-950 rounded-lg uppercase">Kegiatan</span>
-                    <span class="text-emerald-100/70">04 Juli 2026</span>
+                    <span class="text-emerald-100/70">13 Juli 2026</span>
                 </div>
-                <h1 class="font-heading text-2xl md:text-4xl font-extrabold text-white leading-tight">Workshop Peningkatan Transformasi Pembelajaran Digital</h1>
+                <h1 class="font-heading text-2xl md:text-4xl font-extrabold text-white leading-tight"></h1>
                 
-                {{-- SLOT FOTO BERITA 2 --}}
                 <div class="w-full bg-white/5 rounded-2xl border border-white/10 p-2 overflow-hidden shadow-inner">
-                    <img src="{{ asset('img/berita2.jpg') }}" alt="Detail Workshop" class="w-full h-64 md:h-96 object-cover rounded-xl" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1200&q=80';">
+                    <img src="{{ asset('img/MATAMUDA1.jpg') }}" alt="Detail Workshop" class="w-full h-64 md:h-96 object-cover rounded-xl" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1200&q=80';">
                 </div>
 
                 <div class="text-emerald-50 text-sm md:text-base leading-relaxed space-y-4 font-medium">
-                    <p>Dalam rangka menyambut digitalisasi sistem akademik, dewan guru MTs. NW Karang Juli mengikuti workshop intensif. Program ini bertujuan melatih kapabilitas pengajaran interaktif menggunakan instrumen berbasis TIK modern.</p>
+                    <p>.</p>
                 </div>
-            {{-- Berita 2.2 --}}
+                {{-- Berita 2.2 --}}
                 <div class="flex items-center gap-3 text-xs">
                     <span class="px-2.5 py-1 font-bold bg-blue-400 text-zinc-950 rounded-lg uppercase">Kegiatan</span>
-                    <span class="text-emerald-100/70">04 Juli 2026</span>
+                    <span class="text-emerald-100/70">13 Juli 2026</span>
                 </div>
-                <h1 class="font-heading text-2xl md:text-4xl font-extrabold text-white leading-tight">Workshop Peningkatan Transformasi Pembelajaran Digital</h1>
+                <h1 class="font-heading text-2xl md:text-4xl font-extrabold text-white leading-tight"></h1>
                 
-                {{-- SLOT FOTO BERITA 2 --}}
                 <div class="w-full bg-white/5 rounded-2xl border border-white/10 p-2 overflow-hidden shadow-inner">
-                    <img src="{{ asset('img/berita2.jpg') }}" alt="Detail Workshop" class="w-full h-64 md:h-96 object-cover rounded-xl" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1200&q=80';">
+                    <img src="{{ asset('img/MATAMUDA2.jpg') }}" alt="Detail Workshop" class="w-full h-64 md:h-96 object-cover rounded-xl" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1200&q=80';">
                 </div>
 
                 <div class="text-emerald-50 text-sm md:text-base leading-relaxed space-y-4 font-medium">
-                    <p>Dalam rangka menyambut digitalisasi sistem akademik, dewan guru MTs. NW Karang Juli mengikuti workshop intensif. Program ini bertujuan melatih kapabilitas pengajaran interaktif menggunakan instrumen berbasis TIK modern.</p>
+                    <p>.</p>
                 </div>
-            {{-- Berita 2.3 --}}
+                {{-- Berita 2.3 --}}
                 <div class="flex items-center gap-3 text-xs">
                     <span class="px-2.5 py-1 font-bold bg-blue-400 text-zinc-950 rounded-lg uppercase">Kegiatan</span>
-                    <span class="text-emerald-100/70">04 Juli 2026</span>
+                    <span class="text-emerald-100/70">13 Juli 2026</span>
                 </div>
-                <h1 class="font-heading text-2xl md:text-4xl font-extrabold text-white leading-tight">Workshop Peningkatan Transformasi Pembelajaran Digital</h1>
+                <h1 class="font-heading text-2xl md:text-4xl font-extrabold text-white leading-tight"></h1>
                 
-                {{-- SLOT FOTO BERITA 2 --}}
                 <div class="w-full bg-white/5 rounded-2xl border border-white/10 p-2 overflow-hidden shadow-inner">
-                    <img src="{{ asset('img/berita2.jpg') }}" alt="Detail Workshop" class="w-full h-64 md:h-96 object-cover rounded-xl" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1200&q=80';">
+                    <img src="{{ asset('img/MATAMUDA3.jpg') }}" alt="Detail Workshop" class="w-full h-64 md:h-96 object-cover rounded-xl" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1200&q=80';">
                 </div>
 
                 <div class="text-emerald-50 text-sm md:text-base leading-relaxed space-y-4 font-medium">
-                    <p>Dalam rangka menyambut digitalisasi sistem akademik, dewan guru MTs. NW Karang Juli mengikuti workshop intensif. Program ini bertujuan melatih kapabilitas pengajaran interaktif menggunakan instrumen berbasis TIK modern.</p>
+                    <p>.</p>
                 </div>
-            {{-- Berita 2.4 --}}
+                {{-- Berita 2.4 --}}
                 <div class="flex items-center gap-3 text-xs">
                     <span class="px-2.5 py-1 font-bold bg-blue-400 text-zinc-950 rounded-lg uppercase">Kegiatan</span>
-                    <span class="text-emerald-100/70">04 Juli 2026</span>
+                    <span class="text-emerald-100/70">13 Juli 2026</span>
                 </div>
-                <h1 class="font-heading text-2xl md:text-4xl font-extrabold text-white leading-tight">Workshop Peningkatan Transformasi Pembelajaran Digital</h1>
+                <h1 class="font-heading text-2xl md:text-4xl font-extrabold text-white leading-tight"></h1>
                 
-                {{-- SLOT FOTO BERITA 2 --}}
                 <div class="w-full bg-white/5 rounded-2xl border border-white/10 p-2 overflow-hidden shadow-inner">
-                    <img src="{{ asset('img/berita2.jpg') }}" alt="Detail Workshop" class="w-full h-64 md:h-96 object-cover rounded-xl" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1200&q=80';">
+                    <img src="{{ asset('img/MATAMUDA4.jpg') }}" alt="Detail Workshop" class="w-full h-64 md:h-96 object-cover rounded-xl" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1200&q=80';">
                 </div>
 
                 <div class="text-emerald-50 text-sm md:text-base leading-relaxed space-y-4 font-medium">
-                    <p>Dalam rangka menyambut digitalisasi sistem akademik, dewan guru MTs. NW Karang Juli mengikuti workshop intensif. Program ini bertujuan melatih kapabilitas pengajaran interaktif menggunakan instrumen berbasis TIK modern.</p>
+                    <p>.</p>
                 </div>
             @endif
 
@@ -159,30 +154,29 @@
                     <span class="px-2.5 py-1 font-bold bg-rose-400 text-zinc-950 rounded-lg uppercase">Prestasi</span>
                     <span class="text-emerald-100/70">28 Juni 2026</span>
                 </div>
-                <h1 class="font-heading text-2xl md:text-4xl font-extrabold text-white leading-tight">Santri MTs. NW Karang Juli Juara 1 Tingkat Kabupaten</h1>
+                <h1 class="font-heading text-2xl md:text-4xl font-extrabold text-white leading-tight">Santri MTs. NW Karang Juli Juara 2 Tingkat Kecamatan</h1>
                 
                 {{-- SLOT FOTO BERITA 3 --}}
                 <div class="w-full bg-white/5 rounded-2xl border border-white/10 p-2 overflow-hidden shadow-inner">
-                    <img src="{{ asset('img/berita3.jpg') }}" alt="Detail Prestasi" class="w-full h-64 md:h-96 object-cover rounded-xl" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=1200&q=80';">
+                    <img src="{{ asset('img/JUARA2_1.jpg') }}" alt="Detail Prestasi" class="w-full h-64 md:h-96 object-cover rounded-xl" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=1200&q=80';">
                 </div>
 
                 <div class="text-emerald-50 text-sm md:text-base leading-relaxed space-y-4 font-medium">
-                    <p>Kabar membanggakan datang dari santri berprestasi kita yang sukses merebut gelar juara utama perlombaan keagamaan. Semoga pencapaian ini memicu semangat juang bagi seluruh santri lainnya.</p>
+                    <p>Kabar membanggakan datang dari santri berprestasi kita yang sukses merebut gelar juara dua perlombaan tari nasional. Semoga pencapaian ini memicu semangat juang bagi seluruh santri lainnya.</p>
                 </div>
-            {{-- Berita 3.1 --}}
+                {{-- Berita 3.1 --}}
                 <div class="flex items-center gap-3 text-xs">
                     <span class="px-2.5 py-1 font-bold bg-rose-400 text-zinc-950 rounded-lg uppercase">Prestasi</span>
                     <span class="text-emerald-100/70">28 Juni 2026</span>
                 </div>
-                <h1 class="font-heading text-2xl md:text-4xl font-extrabold text-white leading-tight">Santri MTs. NW Karang Juli Juara 1 Tingkat Kabupaten</h1>
+                <h1 class="font-heading text-2xl md:text-4xl font-extrabold text-white leading-tight"></h1>
                 
-                {{-- SLOT FOTO BERITA 3 --}}
                 <div class="w-full bg-white/5 rounded-2xl border border-white/10 p-2 overflow-hidden shadow-inner">
-                    <img src="{{ asset('img/berita3.jpg') }}" alt="Detail Prestasi" class="w-full h-64 md:h-96 object-cover rounded-xl" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=1200&q=80';">
+                    <img src="{{ asset('img/JUARA2_2.jpg') }}" alt="Detail Prestasi" class="w-full h-64 md:h-96 object-cover rounded-xl" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=1200&q=80';">
                 </div>
 
                 <div class="text-emerald-50 text-sm md:text-base leading-relaxed space-y-4 font-medium">
-                    <p>Kabar membanggakan datang dari santri berprestasi kita yang sukses merebut gelar juara utama perlombaan keagamaan. Semoga pencapaian ini memicu semangat juang bagi seluruh santri lainnya.</p>
+                    <p>.</p>
                 </div>
             @endif
 

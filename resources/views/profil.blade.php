@@ -116,9 +116,9 @@
                         <tr class="border-b border-white/10 bg-white/5"><td class="p-4 font-semibold w-1/3 text-white drop-shadow-sm">Nama Madrasah</td><td class="p-4 font-medium">MTs. NW Karang Juli</td></tr>
                         <tr class="border-b border-white/10"><td class="p-4 font-semibold text-white drop-shadow-sm">NPSN / NSM</td><td class="p-4 font-medium">12345678 / 1212520...</td></tr>
                         <tr class="border-b border-white/10 bg-white/5"><td class="p-4 font-semibold text-white drop-shadow-sm">Status Akreditasi</td><td class="p-4"><span class="px-2.5 py-0.5 bg-amber-400 text-emerald-950 text-xs font-bold rounded-full shadow-sm">Terakreditasi A</span></td></tr>
-                        <tr class="border-b border-white/10"><td class="p-4 font-semibold text-white drop-shadow-sm">Alamat Lengkap</td><td class="p-4 font-medium">Jl. Raya Kadindi, No. 12, Karang Juli</td></tr>
+                        <tr class="border-b border-white/10"><td class="p-4 font-semibold text-white drop-shadow-sm">Alamat Lengkap</td><td class="p-4 font-medium">Jl. Datuk Anggrat, Dusun Pusaka, Kadindi</td></tr>
                         <tr class="border-b border-white/10 bg-white/5"><td class="p-4 font-semibold text-white drop-shadow-sm">Naungan Yayasan</td><td class="p-4 font-medium">YPP NW KADINDI</td></tr>
-                        <tr><td class="p-4 font-semibold text-white drop-shadow-sm">Kepala Madrasah</td><td class="p-4 font-medium">Nama Kepala Sekolah, S.Pd.I</td></tr>
+                        <tr><td class="p-4 font-semibold text-white drop-shadow-sm">Kepala Madrasah</td><td class="p-4 font-medium">Hariadi, S.Pd.</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -130,7 +130,7 @@
             {{-- SLOT FOTO KEPALA SEKOLAH --}}
             {{-- Simpan foto Bapak Kepala Sekolah di folder public/img/kepsek.jpg --}}
             <div class="w-24 h-24 md:w-28 md:h-28 rounded-full bg-white/10 border-2 border-white/40 shadow-xl overflow-hidden flex-shrink-0 relative group">
-                <img src="{{ asset('img/kepsek.jpg') }}" 
+                <img src="{{ asset('img/Kepsekmts.jpg') }}" 
                     alt="Foto Kepala MTs. NW Karang Juli" 
                     class="w-full h-full object-cover object-top transition duration-500 group-hover:scale-110"
                     onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=256&q=80';">
@@ -147,7 +147,7 @@
                     "Selamat datang di platform informasi akademik digital kami. Melalui sistem terintegrasi ini, kami berkomitmen mewujudkan transparansi, kemudahan akses belajar bagi santri, serta sinergi yang kokoh antara asatidz/guru dengan para orang tua wali murid."
                 </p>
                 <div class="pt-1">
-                    <p class="text-xs md:text-sm font-bold text-amber-300 tracking-wide uppercase">- Nama Kepala Sekolah, S.Pd.I</p>
+                    <p class="text-xs md:text-sm font-bold text-amber-300 tracking-wide uppercase">- Hariadi, S.Pd.</p>
                     <p class="text-[10px] text-emerald-200/70 font-semibold uppercase tracking-wider">Kepala MTs. NW Karang Juli</p>
                 </div>
             </div>
